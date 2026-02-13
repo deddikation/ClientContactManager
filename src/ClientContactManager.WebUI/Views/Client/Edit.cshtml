@@ -1,0 +1,127 @@
+@model ClientContactManager.Application.DTOs.ClientDetailDto
+@{
+    ViewData["Title"] = $"Edit Client - {Model.Name}";
+    var availableContacts = ViewBag.AvailableContacts as List<ClientContactManager.Application.DTOs.ContactListDto>;
+}
+
+<div class="breadcrumb-bar">
+    <a asp-controller="Home" asp-action="Index">Dashboard</a>
+    <span class="sep">/</span>
+    <a asp-controller="Client" asp-action="Index">Clients</a>
+    <span class="sep">/</span>
+    <span class="current">@Model.Name</span>
+</div>
+
+<div class="page-header">
+    <h2>@Model.Name</h2>
+    <div class="actions">
+        <span class="cell-code" style="font-size:0.9rem; padding:0.35rem 0.75rem;">@Model.ClientCode</span>
+        <a asp-action="Index" class="btn btn-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            Back to list
+        </a>
+    </div>
+</div>
+
+<div class="card-panel" style="padding:0; overflow:hidden;">
+    <ul class="nav nav-tabs-custom" id="clientTabs" role="tablist" style="padding: 0 1.75rem;">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" type="button" role="tab">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                General
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contacts-tab" data-bs-toggle="tab" data-bs-target="#contacts" type="button" role="tab">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Contacts
+                @if (Model.LinkedContacts.Any())
+                {
+                    <span class="count-badge" style="font-size:0.7rem; height:20px; min-width:20px; margin-left:0.25rem;">@Model.LinkedContacts.Count</span>
+                }
+            </button>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="clientTabContent" style="padding: 1.75rem;">
+        <div class="tab-pane fade show active" id="general" role="tabpanel">
+            <div class="form-group">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" value="@Model.Name" readonly />
+            </div>
+            <div class="form-group">
+                <label class="form-label">Client Code</label>
+                <input type="text" class="form-control" value="@Model.ClientCode" readonly />
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="contacts" role="tabpanel">
+            @if (availableContacts != null && availableContacts.Any())
+            {
+                <form asp-action="LinkContact" method="post">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="clientId" value="@Model.Id" />
+                    <div class="link-bar">
+                        <select name="contactId" class="form-select">
+                            @foreach (var c in availableContacts)
+                            {
+                                <option value="@c.Id">@c.Surname @c.Name (@c.Email)</option>
+                            }
+                        </select>
+                        <button type="submit" class="btn btn-success">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                            Link Contact
+                        </button>
+                    </div>
+                </form>
+            }
+
+            @if (!Model.LinkedContacts.Any())
+            {
+                <div class="empty-state">
+                    <div class="empty-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/>
+                        </svg>
+                    </div>
+                    <p>No contacts linked</p>
+                    <p class="empty-hint">Use the dropdown above to link contacts to this client.</p>
+                </div>
+            }
+            else
+            {
+                <div class="table-container">
+                    <table class="table-custom">
+                        <thead>
+                            <tr>
+                                <th>Full Name</th>
+                                <th>Email</th>
+                                <th style="width:100px"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        @foreach (var contact in Model.LinkedContacts)
+                        {
+                            <tr>
+                                <td class="cell-primary">@contact.FullName</td>
+                                <td>@contact.Email</td>
+                                <td class="cell-actions">
+                                    <form asp-action="UnlinkContact" method="post" style="display:inline">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="clientId" value="@Model.Id" />
+                                        <input type="hidden" name="contactId" value="@contact.ContactId" />
+                                        <button type="submit" class="btn btn-sm btn-ghost-danger">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                                            Unlink
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </div>
+    </div>
+</div>

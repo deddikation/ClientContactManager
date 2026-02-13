@@ -1,0 +1,15 @@
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Application\bin\Debug\net8.0\ClientContactManager.Application.deps.json
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Application\bin\Debug\net8.0\ClientContactManager.Application.dll
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Application\bin\Debug\net8.0\ClientContactManager.Application.pdb
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Application\bin\Debug\net8.0\ClientContactManager.Domain.dll
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Application\bin\Debug\net8.0\ClientContactManager.Domain.pdb
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Application\obj\Debug\net8.0\ClientContactManager.Application.csproj.AssemblyReference.cache
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Application\obj\Debug\net8.0\ClientContactManager.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Application\obj\Debug\net8.0\ClientContactManager.Application.AssemblyInfoInputs.cache
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Application\obj\Debug\net8.0\ClientContactManager.Application.AssemblyInfo.cs
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Application\obj\Debug\net8.0\ClientContactManager.Application.csproj.CoreCompileInputs.cache
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Application\obj\Debug\net8.0\ClientCo.FD4EB350.Up2Date
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Application\obj\Debug\net8.0\ClientContactManager.Application.dll
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Application\obj\Debug\net8.0\refint\ClientContactManager.Application.dll
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Application\obj\Debug\net8.0\ClientContactManager.Application.pdb
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Application\obj\Debug\net8.0\ref\ClientContactManager.Application.dll

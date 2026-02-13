@@ -1,0 +1,11 @@
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Domain\bin\Debug\net8.0\ClientContactManager.Domain.deps.json
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Domain\bin\Debug\net8.0\ClientContactManager.Domain.dll
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Domain\bin\Debug\net8.0\ClientContactManager.Domain.pdb
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Domain\obj\Debug\net8.0\ClientContactManager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Domain\obj\Debug\net8.0\ClientContactManager.Domain.AssemblyInfoInputs.cache
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Domain\obj\Debug\net8.0\ClientContactManager.Domain.AssemblyInfo.cs
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Domain\obj\Debug\net8.0\ClientContactManager.Domain.csproj.CoreCompileInputs.cache
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Domain\obj\Debug\net8.0\ClientContactManager.Domain.dll
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Domain\obj\Debug\net8.0\refint\ClientContactManager.Domain.dll
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Domain\obj\Debug\net8.0\ClientContactManager.Domain.pdb
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Domain\obj\Debug\net8.0\ref\ClientContactManager.Domain.dll

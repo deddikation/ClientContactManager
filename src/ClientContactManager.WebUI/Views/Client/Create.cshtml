@@ -1,0 +1,61 @@
+@{ ViewData["Title"] = "Create Client"; }
+
+<div class="breadcrumb-bar">
+    <a asp-controller="Home" asp-action="Index">Dashboard</a>
+    <span class="sep">/</span>
+    <a asp-controller="Client" asp-action="Index">Clients</a>
+    <span class="sep">/</span>
+    <span class="current">Create</span>
+</div>
+
+<div class="page-header">
+    <h2>Create Client</h2>
+    <div class="actions">
+        <a asp-action="Index" class="btn btn-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            Back to list
+        </a>
+    </div>
+</div>
+
+<div class="card-panel">
+    <form asp-action="Create" method="post">
+        @Html.AntiForgeryToken()
+        <div asp-validation-summary="All" class="alert-validation" style="display:none"></div>
+
+        <ul class="nav nav-tabs-custom mb-0">
+            <li class="nav-item">
+                <button class="nav-link active" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    General
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content-custom">
+            <div class="form-group">
+                <label for="name" class="form-label">Name <span class="required">*</span></label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter client name" required />
+            </div>
+
+            <div class="form-footer">
+                <button type="submit" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+                    Save Client
+                </button>
+                <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        (function () {
+            var summary = document.querySelector('.alert-validation');
+            if (summary && summary.innerHTML.trim().length > 0) {
+                summary.style.display = 'flex';
+            }
+        })();
+    </script>
+}

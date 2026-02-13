@@ -1,0 +1,17 @@
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Infrastructure\bin\Debug\net8.0\ClientContactManager.Infrastructure.deps.json
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Infrastructure\bin\Debug\net8.0\ClientContactManager.Infrastructure.dll
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Infrastructure\bin\Debug\net8.0\ClientContactManager.Infrastructure.pdb
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Infrastructure\bin\Debug\net8.0\ClientContactManager.Application.dll
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Infrastructure\bin\Debug\net8.0\ClientContactManager.Domain.dll
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Infrastructure\bin\Debug\net8.0\ClientContactManager.Application.pdb
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Infrastructure\bin\Debug\net8.0\ClientContactManager.Domain.pdb
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Infrastructure\obj\Debug\net8.0\ClientContactManager.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Infrastructure\obj\Debug\net8.0\ClientContactManager.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Infrastructure\obj\Debug\net8.0\ClientContactManager.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Infrastructure\obj\Debug\net8.0\ClientContactManager.Infrastructure.AssemblyInfo.cs
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Infrastructure\obj\Debug\net8.0\ClientContactManager.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Infrastructure\obj\Debug\net8.0\ClientCo.5A241693.Up2Date
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Infrastructure\obj\Debug\net8.0\ClientContactManager.Infrastructure.dll
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Infrastructure\obj\Debug\net8.0\refint\ClientContactManager.Infrastructure.dll
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Infrastructure\obj\Debug\net8.0\ClientContactManager.Infrastructure.pdb
+C:\Users\lucas\OneDrive\Desktop\ClientContactManager\src\ClientContactManager.Infrastructure\obj\Debug\net8.0\ref\ClientContactManager.Infrastructure.dll
